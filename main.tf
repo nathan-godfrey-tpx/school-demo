@@ -10,3 +10,7 @@ module "az_app" {
   service_plan_name = "school-demo"
   web_app_name      = "school-demo"
 }
+
+output web_app_hostname {
+  value = module.az_app.web_app_hostname
+}
